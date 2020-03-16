@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <style>
 
   .outer {
@@ -27,34 +26,6 @@
     width: 400px;
     /*whatever width you want*/
   }
-  .button {
-  background-color: #008CBA; /* Green */
-  border: none;
-  color: white;
-  padding: 14px 40px;;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #4CAF50;
-}
-
-p {
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-}
-
-a {
-  text-decoration: none;
-  color: #008CBA;
-}
 </style>
 </head>
 
@@ -64,16 +35,13 @@ a {
   <div class="middle">
     <div class="inner">
       <div *ngIf="!user" id="okta-login-container"></div>
+      <div *ngIf="user">
+        Hello {{user}} <p></p>
+        Copy this link to download the assignment feedback (Code: k9cm):<p></p> https://pan.baidu.com/s/1A3t7F6hRFHF7pYfzZCK-Uw
+        <p></p><button (click)="logout()">Logout</button>
+      </div>
     </div>
   </div>
-</div>
-      <div *ngIf="user">
-        <h1>Hello {{user}}</h1>
-        <p></p>
-        <a href="https://pan.baidu.com/s/1A3t7F6hRFHF7pYfzZCK-Uw">Download my assignment feedback (Code: k9cm)</a>
-        <p><br></p>
-        <button (click)="logout()" class="button">Logout</button>
-
 </div>
 
 
