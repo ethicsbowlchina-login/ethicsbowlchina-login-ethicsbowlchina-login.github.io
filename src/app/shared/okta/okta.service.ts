@@ -11,7 +11,7 @@ export class Okta {
     this.widget = new OktaSignIn({
       baseUrl: 'https://dev-709191.okta.com',
       clientId: '0oa40vvbnqMjXV0I74x6',
-      redirectUri: 'https://ethicsbowlchina-login.github.io',
+      redirectUri: 'https://app.ethicsbowlchina.com/',
       authParams: {
         issuer: 'default'
       }
