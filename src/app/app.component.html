@@ -1,40 +1,85 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
+
 <head>
-  <style>
-    .outer {
-      display: table;
+  <meta charset="utf-8">
+
+<style>
+
+  .outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /*whatever width you want*/
+  }
+  div.absolute {
       position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
+      bottom: 20px;
+      right: 16px;
+      font-size: 18px;
+  }
+
+    a:link {
+      text-decoration: none;
     }
 
-    .middle {
-      display: table-cell;
-      vertical-align: middle;
+    a:visited {
+      text-decoration: none;
     }
 
-    .inner {
-      margin-left: auto;
-      margin-right: auto;
-      width: 400px;
-      /*whatever width you want*/
+    a:hover {
+      text-decoration: none;
     }
-  </style>
+
+    a:active {
+      text-decoration: none;
+    }
+    /* unvisited link */
+a:link {
+color: black;
+}
+
+/* visited link */
+a:visited {
+color: black;
+}
+
+/* mouse over link */
+a:hover {
+color: blue;
+}
+
+/* selected link */
+a:active {
+color: black;
+}
+</style>
 </head>
+
 <body>
 
 <div class="outer">
   <div class="middle">
     <div class="inner">
       <div *ngIf="!user" id="okta-login-container"></div>
+      <div *ngIf="!user" class="absolute"><a href="https://dev-709191.okta.com/signin/register">Sign up </a>·<a href="https://ethicsbowlchina.com"> Home </a>·<a href="https://ethicsbowlchina.com/about.html"> About</a></div>
       <div *ngIf="user">
         Hello {{user}}
-
-        <button (click)="logout()">Logout</button>
+<p></p>        <button (click)="logout()">Logout</button>
       </div>
     </div>
   </div>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>SIEB | Ethics Bowl China</title>
+
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?55b8a0dd074895256dfd4179942614f2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<style>
+  .outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /*whatever width you want*/
+  }
+  div.absolute {
+      position: absolute;
+      bottom: 20px;
+      right: 16px;
+      font-size: 18px;
+  }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:active {
+      text-decoration: none;
+    }
+    /* unvisited link */
+a:link {
+color: black;
+}
+
+/* visited link */
+a:visited {
+color: black;
+}
+
+/* mouse over link */
+a:hover {
+color: blue;
+}
+
+/* selected link */
+a:active {
+color: black;
+}
+</style>
+</head>
+
+<body>
+
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+<li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="schedule.html">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="media.html">Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="faqs.html">FAQs</a>
+        </li>
+      </ul>
+    </div>  </nav>
+</header>
+
+<!-- page title -->
+<section class="page-title bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="text-white font-tertiary">Sign in to your Ethics Bowl China Account</h2>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- /page title -->
+
+      <div *ngIf="!user" id="okta-login-container"></div>
+      <div *ngIf="user">
+        Hello {{user}}
+
+        <button (click)="logout()">Logout</button>
+      </div>
+
+<!-- footer -->
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-black paragraph-lg font-secondary">info@ethicsbowlchina.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">YouTube Channel</h5>
+          <p class="text-black paragraph-lg font-secondary">Ethics Bowl China</p>
+        </div>
+         <div class="col-md-4">
+          <h5 class="text-light">Youku Channel</h5>
+          <p class="text-black paragraph-lg font-secondary">EthicsBowlChina</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> Ethics Bowl China</a><br> Website created and edited by Leo Huang
+      </p>
+  </div>
+
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
