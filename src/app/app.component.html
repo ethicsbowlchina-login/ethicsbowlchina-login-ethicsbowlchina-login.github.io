@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <style>
 
   .outer {
@@ -26,46 +27,33 @@
     width: 400px;
     /*whatever width you want*/
   }
-  div.absolute {
-      position: absolute;
-      bottom: 20px;
-      right: 16px;
-      font-size: 18px;
-  }
-
-    a:link {
-      text-decoration: none;
-    }
-
-    a:visited {
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-
-    a:active {
-      text-decoration: none;
-    }
-    /* unvisited link */
-a:link {
-color: black;
+  .button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 40px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
-/* visited link */
-a:visited {
-color: black;
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
 }
 
-/* mouse over link */
-a:hover {
-color: blue;
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
 }
 
-/* selected link */
-a:active {
-color: black;
+a {
+  text-decoration: none;
+  color: #008CBA;
 }
 </style>
 </head>
@@ -76,13 +64,16 @@ color: black;
   <div class="middle">
     <div class="inner">
       <div *ngIf="!user" id="okta-login-container"></div>
-      <div *ngIf="!user" class="absolute"><a href="https://dev-709191.okta.com/signin/register">Sign up </a>·<a href="https://ethicsbowlchina.com"> Home </a>·<a href="https://ethicsbowlchina.com/about.html"> About</a></div>
-      <div *ngIf="user">
-        Hello {{user}}
-<p></p>        <button (click)="logout()">Logout</button>
-      </div>
     </div>
   </div>
+</div>
+      <div *ngIf="user">
+        <h1>Hello {{user}}</h1>
+        <p></p>
+        <a href="https://pan.baidu.com/s/1A3t7F6hRFHF7pYfzZCK-Uw">Download my assignment feedback (Code: k9cm)</a>
+        <p><br></p>
+        <button (click)="logout()" class="button">Logout</button>
+
 </div>
 
 
